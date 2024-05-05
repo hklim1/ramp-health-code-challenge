@@ -1,5 +1,6 @@
 <template>
   <div class="bodyContainer">
+    <SearchBar />
     <OtherTableThing />
   </div>
 </template>
@@ -7,10 +8,12 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import OtherTableThing from "./OtherTableThing.vue";
+import SearchBar from "./SearchBar.vue";
 
 export default defineComponent({
   name: "App",
   components: {
+    SearchBar,
     OtherTableThing,
   },
 });
